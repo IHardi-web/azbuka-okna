@@ -172,3 +172,133 @@ body {
     background: $white;
   }
 }
+
+.menu {
+  font-family: $exo-2;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-bottom: 1px solid $grey-400;
+
+  &__inner {
+    max-width: 100%;
+    height: 8.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0 3.3rem;
+
+    &:hover {
+      .menu__icon {
+        fill: $pink-lightest;
+        stroke: $pink-lightest;
+      }
+    }
+  }
+
+  &__icon {
+    height: 2.8rem;
+    width: 3.5rem;
+    margin-right: 1.5rem;
+    fill: $grey-450;
+    stroke: $grey-450;
+    transition: .3s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel {
+
+  &__inner {
+    height: 550px;
+    position: relative;
+    margin: auto;
+  }
+
+  &__item {
+
+  }
+
+  &__image {
+    width: 100%;
+    min-height: 551px;
+    object-fit: cover;
+  }
+
+  &__content {
+    width: 700px;
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $exo-2;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: $grey-800;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    color: $grey-700;
+    margin-top: 1.5rem;
+  }
+
+  &__dots {
+    width: 100%;
+    position: relative;
+    bottom: 32px;
+    text-align: center;
+  }
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: $white;
+  border: 1px solid $grey-650;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+  &.active {
+    background-color: $pink;
+    border-color: $pink;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {opacity: .3} 
+  100% {opacity: 1}
+}
+

@@ -217,4 +217,138 @@ body {
   color: #cd3378;
   background: #ffffff;
 }
+
+.menu {
+  font-family: "Exo 2";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.menu__inner {
+  max-width: 100%;
+  height: 8.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3.3rem;
+}
+
+.menu__item:hover .menu__icon {
+  fill: #f89ec6;
+  stroke: #f89ec6;
+}
+
+.menu__icon {
+  height: 2.8rem;
+  width: 3.5rem;
+  margin-right: 1.5rem;
+  fill: #e0e0e0;
+  stroke: #e0e0e0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.carousel__inner {
+  height: 550px;
+  position: relative;
+  margin: auto;
+}
+
+.carousel__image {
+  width: 100%;
+  min-height: 551px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel__content {
+  width: 700px;
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.carousel__title {
+  font-family: "Exo 2";
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: #545455;
+}
+
+.carousel__subtitle {
+  font-weight: 400;
+  color: #818181;
+  margin-top: 1.5rem;
+}
+
+.carousel__dots {
+  width: 100%;
+  position: relative;
+  bottom: 32px;
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #ffffff;
+  border: 1px solid #b8b8b8;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #cd3378;
+  border-color: #cd3378;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=main.css.map */
