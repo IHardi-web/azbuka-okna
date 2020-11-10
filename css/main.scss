@@ -27,6 +27,9 @@ $pink-light: #ce4180;
 $pink-lighter:#d1528b;
 $pink-lightest: #f89ec6;
 
+
+$border: 1px solid $grey-400;
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -84,7 +87,7 @@ body {
 .header {
 
   &__top {
-    border-bottom: 1px solid $grey-400;
+    border-bottom: $border;
 
     &--inner {
       display: flex;
@@ -123,7 +126,6 @@ body {
   }
 
   &__text {
-    font-size: 1.6rem;
     color: $grey-700;
     margin-left: 3.9rem;
     align-self: center;
@@ -177,8 +179,7 @@ body {
   font-family: $exo-2;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.6rem;
-  border-bottom: 1px solid $grey-400;
+  border-bottom: $border;
 
   &__inner {
     max-width: 100%;
@@ -212,28 +213,13 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .carousel {
 
   &__inner {
     height: 550px;
     position: relative;
     margin: auto;
+    overflow: hidden;
   }
 
   &__item {
@@ -247,14 +233,18 @@ body {
   }
 
   &__content {
-    width: 700px;
+    width: 750px;
+    height: 174px;
+    padding: 45px 15px 0;
+    box-shadow: 0px 0px 31.96px 2.04px rgba(88, 79, 85, 0.41);
+    background-color: #fbfbfb;
     position: absolute;
-    top: 430px;
+    top: 377px;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
   }
-
+  
   &__title {
     font-family: $exo-2;
     font-size: 3.2rem;
@@ -265,7 +255,7 @@ body {
   &__subtitle {
     font-weight: 400;
     color: $grey-700;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
   }
 
   &__dots {
@@ -302,3 +292,7 @@ body {
   100% {opacity: 1}
 }
 
+.section {
+  padding: 60px 0;
+  border-bottom: $border;
+}

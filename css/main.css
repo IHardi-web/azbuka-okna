@@ -165,7 +165,6 @@ body {
 }
 
 .header__text {
-  font-size: 1.6rem;
   color: #818181;
   margin-left: 3.9rem;
   -ms-flex-item-align: center;
@@ -222,7 +221,6 @@ body {
   font-family: "Exo 2";
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.6rem;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -271,6 +269,7 @@ body {
   height: 550px;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 
 .carousel__image {
@@ -281,9 +280,14 @@ body {
 }
 
 .carousel__content {
-  width: 700px;
+  width: 750px;
+  height: 174px;
+  padding: 45px 15px 0;
+  -webkit-box-shadow: 0px 0px 31.96px 2.04px rgba(88, 79, 85, 0.41);
+          box-shadow: 0px 0px 31.96px 2.04px rgba(88, 79, 85, 0.41);
+  background-color: #fbfbfb;
   position: absolute;
-  top: 430px;
+  top: 377px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -300,7 +304,7 @@ body {
 .carousel__subtitle {
   font-weight: 400;
   color: #818181;
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
 }
 
 .carousel__dots {
@@ -350,5 +354,10 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid #eaeaea;
 }
 /*# sourceMappingURL=main.css.map */
