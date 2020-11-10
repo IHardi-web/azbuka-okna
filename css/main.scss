@@ -33,6 +33,142 @@ html {
 }
 
 body {
+  font-family: $roboto, sans-serif;
   font-size: 1.6rem;
   color: $grey-850;
+  line-height: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  background-color: $grey-900;
+
+  &__inner {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 3.2rem;
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: $grey-700;
+    transition: .3s;
+
+    &--icon {
+      width: .7rem;
+      height: 1.1rem;
+      margin-right: 0.5rem
+    }
+
+    &:hover {
+      color: $grey-350;
+    } 
+  }
+}
+
+.header {
+
+  &__top {
+    border-bottom: 1px solid $grey-400;
+
+    &--inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10.8rem;
+    }
+
+    &--wrap {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    margin-top: -26px;
+    text-transform: uppercase;
+    color: $pink;
+    font-size: 3.7rem;
+    font-weight: 700;
+    font-family: $exo-2;
+    width: 9.6rem;
+    line-height: 3.5rem;
+    text-indent: -2px;
+
+    &--top {
+      text-align: center;
+      padding-top: 1.5rem;
+      color: $white;
+      font-size: 2.5rem;
+      line-height: 2rem;
+      padding-top: 27px;
+      background: $pink;
+      text-indent: 0;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $grey-700;
+    margin-left: 3.9rem;
+    align-self: center;
+    width: 23rem;
+    line-height: 1.7rem;
+  }
+
+  &__phone {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $grey-700;
+
+    a {
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: $grey-800;
+      transition: .3s;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  &__button {
+    margin-left: 4.5rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: $white;
+  font-weight: 700;
+  padding: 1.15rem 1.5rem;
+  background-color: $pink;
+  border-radius: 6px;
+  border: 2px solid $pink;
+  transition: .3s;
+
+  &:hover {
+    color: $pink;
+    background: $white;
+  }
 }
