@@ -223,7 +223,6 @@ body {
 .carousel {
 
   &__inner {
-    height: 550px;
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -231,18 +230,18 @@ body {
 
   &__image {
     width: 100%;
-    min-height: 551px;
+    min-height: 552px;
     object-fit: cover;
   }
 
   &__content {
     width: 750px;
-    height: 174px;
+    height: 178px;
     padding: 45px 15px 0;
     box-shadow: $shadow;
     background-color: #fbfbfb;
     position: absolute;
-    top: 377px;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
@@ -264,7 +263,7 @@ body {
   &__dots {
     width: 100%;
     position: relative;
-    bottom: 32px;
+    bottom: 37px;
     text-align: center;
   }
 }
@@ -296,8 +295,12 @@ body {
 }
 
 .section {
-  padding: 4.5rem 0;
+  padding: 5.95rem 0;
   border-bottom: $border;
+
+  &:first-child {
+    padding-top: 4rem;
+  }
 }
 
 .card {
