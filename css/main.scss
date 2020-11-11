@@ -27,9 +27,10 @@ $pink-light: #ce4180;
 $pink-lighter:#d1528b;
 $pink-lightest: #f89ec6;
 
-
+$shadow: 0px 0px 31.96px 2.04px rgba(88, 79, 85, 0.41);
 $border: 1px solid $grey-400;
-$gradient: linear-gradient(90deg, rgba($pink ,0.9) 35%, transparent 100%);
+$gradient: linear-gradient(90deg, rgba($pink-lighter , 0.9) 40%, transparent 100%);
+
 
 html {
   scroll-behavior: smooth;
@@ -233,7 +234,7 @@ body {
     width: 750px;
     height: 174px;
     padding: 45px 15px 0;
-    box-shadow: 0px 0px 31.96px 2.04px rgba(88, 79, 85, 0.41);
+    box-shadow: $shadow;
     background-color: #fbfbfb;
     position: absolute;
     top: 377px;
@@ -297,22 +298,40 @@ body {
 .card {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
 
   &__item {
+    display: block;
     margin: 0 15px;
     position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: .3s;
 
     &:after {
       content: "";
-      width: 380px;
-      height: 200px;
+      width: 100%;
+      height: 100%;
       display: block;
       position: absolute;
-      background: $gradient;
       top: 0;
       left: 0;
-      border-radius: 5px;
+      background: $gradient;
+    }
+
+    &:first-child, &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      box-shadow: $shadow;
+    }
+
+    &--wide {
+      width: 589px;
+  
+      .card__content {
+        top: 27%;
+      }
     }
   }
 
@@ -320,7 +339,7 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    object-fit: cover;
   }
 
   &__content {
@@ -330,6 +349,7 @@ body {
     left: 0;
     top: 43%;
     z-index: 1;
+    
   }
 
   &__title {
@@ -341,11 +361,22 @@ body {
     color: $white;
     padding-bottom: 1.7rem;
     border-bottom: 2px solid $white;
-
+    
     &--no-border {
       padding-bottom: 0;
       border: 0;
+      font-family: $exo-2;
+      font-size: 1.8rem;
     }
   }
+
+  &__icon {
+    width: 59px;
+    height: auto;
+    display: block;
+    margin-left: 4.2rem;
+    margin-bottom: 1.5rem;
+  }
 }
+
 
