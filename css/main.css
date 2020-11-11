@@ -204,17 +204,21 @@ body {
   font-size: 1.3rem;
   color: #ffffff;
   font-weight: 700;
-  padding: 1.15rem 1.5rem;
   background-color: #cd3378;
   border-radius: 6px;
   border: 2px solid #cd3378;
   -webkit-transition: .3s;
   transition: .3s;
+  padding: 0.85rem 0;
 }
 
 .button:hover {
   color: #cd3378;
   background: #ffffff;
+}
+
+.button--large {
+  padding: 1.15rem 1.5rem;
 }
 
 .menu {
@@ -319,7 +323,7 @@ body {
   width: 10px;
   margin: 0 6px;
   background-color: #ffffff;
-  border: 1px solid #b8b8b8;
+  border: 1px solid #dbdbdb;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
@@ -450,5 +454,96 @@ body {
   display: block;
   margin-left: 4.2rem;
   margin-bottom: 1.5rem;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__item {
+  width: 215px;
+  max-width: 100%;
+  background: #f4f4f4;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product__item:hover .product__content {
+  opacity: 1;
+}
+
+.product__item:hover .product__title {
+  opacity: 0;
+}
+
+.product__image {
+  margin: 3rem 2rem 2.2rem;
+  width: 86px;
+  height: 223px;
+  max-width: 100%;
+}
+
+.product__title {
+  padding: 2.7rem 1.5rem 2.9rem;
+  border-top: 2px solid #d1528b;
+  font-family: "Exo 2";
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.product__content {
+  padding: 3.7rem 1.9rem 3rem;
+  background: rgba(0, 0, 0, 0.73);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__desc {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.product__order {
+  margin: 0 1.5rem;
+}
+
+.product__price {
+  margin-bottom: 2.7rem;
+}
+
+.product__price--number {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.product__button {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
