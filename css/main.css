@@ -368,6 +368,15 @@ body {
   padding-top: 4rem;
 }
 
+.section__title {
+  font-family: "Exo 2";
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-top: -.6rem;
+  margin-bottom: 4.9rem;
+  text-indent: -2px;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,6 +592,7 @@ body {
 
 .text-block__item {
   width: 575px;
+  margin-bottom: -0.3rem;
 }
 
 .text-block__item:not(:first-child) {
@@ -592,5 +602,47 @@ body {
 .text {
   line-height: 2.2rem;
   font-size: 1.6rem;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.advantages__item {
+  text-align: center;
+  width: 230px;
+  margin-right: 7rem;
+}
+
+.advantages__item:last-child {
+  margin: 0;
+}
+
+.advantages__title {
+  margin-top: 3.3rem;
+  text-transform: uppercase;
+  color: #545455;
+  font-family: "Exo 2";
+  position: relative;
+}
+
+.advantages__title:before {
+  content: "";
+  width: 3.7rem;
+  height: 2px;
+  background: #d1528b;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 /*# sourceMappingURL=main.css.map */

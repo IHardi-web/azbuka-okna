@@ -301,6 +301,15 @@ body {
   &:first-child {
     padding-top: 4rem;
   }
+
+  &__title {
+    font-family: $exo-2;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-top: -.6rem;
+    margin-bottom: 4.9rem;
+    text-indent: -2px;
+  }
 }
 
 .card {
@@ -496,6 +505,7 @@ body {
 
   &__item {
     width: 575px;
+    margin-bottom: -0.3rem;
 
     &:not(:first-child) {
       margin-left: 2.5rem;
@@ -508,3 +518,37 @@ body {
   font-size: 1.6rem;
 }
 
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__item {
+    text-align: center;
+    width: 230px;
+    margin-right: 7rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 3.3rem;
+    text-transform: uppercase;
+    color: $grey-800;
+    font-family: $exo-2;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 3.7rem;
+      height: 2px;
+      background: $pink-lighter;
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
