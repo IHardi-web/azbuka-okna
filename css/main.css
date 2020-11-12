@@ -852,6 +852,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .text-block__item {
@@ -970,5 +973,30 @@ body {
 
 .arrow:hover {
   border-color: #d1528b;
+}
+
+.partners {
+  margin-top: -1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 570px;
+}
+
+.partners__image {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=main.css.map */

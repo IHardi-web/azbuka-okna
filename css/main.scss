@@ -503,6 +503,7 @@ body {
 .text-block {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 
   &__item {
     width: 575px;
@@ -614,5 +615,21 @@ body {
 
   &:hover {
     border-color: $pink-lighter;
+  }
+}
+
+.partners {
+  margin-top: -1.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &--wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 570px;
+  }
+
+  &__image {
+    object-fit: contain;
   }
 }
