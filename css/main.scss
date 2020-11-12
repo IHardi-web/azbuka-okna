@@ -308,7 +308,7 @@ body {
     font-size: 2.6rem;
     font-weight: 400;
     margin-top: -.6rem;
-    margin-bottom: 4.9rem;
+    margin-bottom: 3.6rem;
     text-indent: -2px;
   }
 }
@@ -507,7 +507,6 @@ body {
 
   &__item {
     width: 575px;
-    margin-bottom: -0.3rem;
 
     &:not(:first-child) {
       margin-left: 2.5rem;
@@ -526,6 +525,8 @@ body {
   align-items: baseline;
 
   &__item {
+    margin-top: 1.3rem;
+    margin-bottom: -0.2rem;
     text-align: center;
     width: 230px;
     margin-right: 7rem;
@@ -572,11 +573,6 @@ body {
 }
 
 .owl {
-  &-carousel--reviews {
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: -1.3rem;
-  }
 
   &-nav {
     position: absolute;
@@ -595,6 +591,26 @@ body {
     position: absolute;
     right: -5%;
   }
+
+  &-carousel {
+    &--reviews {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    &--portfolio {
+      width: 93%;
+      margin: 0 auto;
+      
+      & .owl-prev {
+        left: -3.2%;
+      }
+
+      & .owl-next {
+        right: -3.2%;
+      }
+    }
+  }
 }
 
 .arrow {
@@ -604,6 +620,11 @@ body {
   border-top: 3px solid $grey-550;
   border-right: 3px solid $grey-550;
   transition: .3s;
+
+  &--small {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 
   &--right {
     transform: rotate(45deg);
@@ -619,7 +640,6 @@ body {
 }
 
 .partners {
-  margin-top: -1.2rem;
   display: flex;
   justify-content: space-between;
 
@@ -627,9 +647,27 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 570px;
+    position: relative;
+    top: -2.2rem;
   }
 
   &__image {
     object-fit: contain;
   }
+}
+
+.portfolio {
+  width: 93.33333%;
+  margin: 0 auto;
+  &__item {
+    width: 100%;
+  }
+
+  &__image {
+    width: 209px;
+    height: 143px;
+    object-fit: cover;
+  }
+
+  
 }
