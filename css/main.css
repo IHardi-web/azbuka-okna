@@ -1112,4 +1112,49 @@ body {
   width: 14.7rem;
   margin: 3rem auto 0;
 }
+
+.footer {
+  padding: 4.5rem 0;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #b8b8b8;
+  font-size: 1.4rem;
+}
+
+.footer--right {
+  text-align: right;
+}
+
+.footer--right .footer__item {
+  margin-bottom: 1.4rem;
+}
+
+.footer__item {
+  margin-bottom: 2.1rem;
+}
+
+.footer__item:last-child {
+  margin: 0;
+}
+
+.footer__link {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__link--number {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.footer__link:hover {
+  color: #4f4f4f;
+}
 /*# sourceMappingURL=main.css.map */
