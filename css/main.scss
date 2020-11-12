@@ -1,5 +1,6 @@
 @import "vendor/_reset";
 @import "vendor/_fonts";
+@import "vendor/owl.carousel";
 
 $black: #000000;
 $white: #ffffff;
@@ -550,5 +551,68 @@ body {
       left: 50%;
       transform: translate(-50%, 0);
     }
+  }
+}
+
+.reviews {
+  
+  &__item {
+    max-width: 255px;
+    padding: 2.8rem 2.4rem;
+    background: $grey-200;
+    color: $grey-700;
+    border-radius: 5px;
+  }
+
+  &__author {
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+}
+
+.owl {
+  &-carousel--reviews {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: -1.3rem;
+  }
+
+  &-nav {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &-prev {
+    position: absolute;
+    left: -5%;
+  }
+
+  &-next {
+    position: absolute;
+    right: -5%;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-top: 3px solid $grey-550;
+  border-right: 3px solid $grey-550;
+  transition: .3s;
+
+  &--right {
+    transform: rotate(45deg);
+  }
+
+  &--left {
+    transform: rotate(-135deg);
+  }
+
+  &:hover {
+    border-color: $pink-lighter;
   }
 }

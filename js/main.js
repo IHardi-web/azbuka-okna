@@ -19,3 +19,25 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 }
 // end carousel
+
+$(document).ready(function () {
+  $('.owl-carousel--reviews').owlCarousel({
+    loop: true,
+    margin: 20,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    navText: ['<span class="arrow arrow--left"></span>', '<span class="arrow arrow--right"></span>'],
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      }
+    }
+  })
+});
