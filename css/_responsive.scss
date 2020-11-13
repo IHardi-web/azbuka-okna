@@ -164,11 +164,6 @@ $sm: 606px;
   }
 }
 
-@media screen and (max-width: $sm) {
-  
-
-}
-
 @media screen and (max-width: 520px) {
   .header {
     &__top {
@@ -269,6 +264,21 @@ $sm: 606px;
     }
   }
 
+  .footer { 
+    &__inner {
+      justify-content: start;
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 1.4rem;
+    }
+    
+    &--right {
+      text-align: left;
+      margin-top: 3rem;
+    }
+  }
 }
 
 
