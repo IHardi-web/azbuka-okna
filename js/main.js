@@ -23,14 +23,17 @@ $(document).ready(function () {
     navText: ['<span class="arrow arrow--left"></span>', '<span class="arrow arrow--right"></span>'],
     responsive: {
       0: {
+        items: 1,
+      },
+      520: {
         items: 2,
       },
-      992: {
+      798: {
         items: 3,
       },
-      1200: {
+      1032: {
         items: 4,
-      }
+      },
     }
   });
 

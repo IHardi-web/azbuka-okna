@@ -711,6 +711,7 @@ body {
 }
 
 .card__title--no-border {
+  display: inline-block;
   padding-bottom: 0;
   border: 0;
   font-family: "Exo 2", sans-serif;
@@ -832,7 +833,7 @@ body {
   position: relative;
   top: -12px;
   font-size: 4rem;
-  line-height: 4.8rem;
+  line-height: 1.2;
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
 }
@@ -851,10 +852,12 @@ body {
 
 .text-block__item {
   width: 575px;
+  max-width: 100%;
+  margin-left: 2.5rem;
 }
 
-.text-block__item:not(:first-child) {
-  margin-left: 2.5rem;
+.text-block__item:first-child {
+  margin-left: 0;
 }
 
 .text {
@@ -1187,6 +1190,13 @@ body {
   .product__item {
     margin: 1.5rem;
   }
+  .main {
+    height: 100%;
+  }
+  .main__title {
+    font-size: 3rem;
+    top: -8px;
+  }
 }
 
 @media screen and (max-width: 798px) {
@@ -1228,6 +1238,14 @@ body {
   .card__item--wide .card__content {
     top: 27%;
   }
+  .advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 40%;
+    margin: 1.3rem 1.5rem;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1261,6 +1279,37 @@ body {
   }
   .menu__item {
     margin-left: 0;
+  }
+  .card__item--wide .card__content {
+    top: 25%;
+  }
+  .card__item--wide .card__title {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+  .card__icon {
+    width: 10%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .main__title {
+    font-size: 2.4rem;
+  }
+  .text-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text-block__item {
+    margin-bottom: 3rem;
+  }
+  .text-block__item:last-child {
+    margin: 0;
+  }
+  .reviews__item {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -1301,6 +1350,11 @@ body {
   }
   .header__button {
     margin: 0;
+  }
+  .advantages__item {
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0 3.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
