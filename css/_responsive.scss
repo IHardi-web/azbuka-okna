@@ -59,7 +59,25 @@ $sm: 606px;
     }
   }
 
+  .card {
+    &__item {
+      &--wide {
+        .card__content {
+          top: 15%;
+        }
+      }
+    }
+  }
 
+  .product {
+    justify-content: center;
+
+    &__item {
+      margin: 1.5rem;
+    }
+  }
+
+  
 }
 
 @media screen and (max-width: $md) {
@@ -101,6 +119,23 @@ $sm: 606px;
       margin: 1.5rem;
     }
   }
+
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+      margin: 1rem 0;
+
+      &--wide {
+        .card__content {
+          top: 27%;
+        }
+      }
+    }
+  }
+
+
 }
 
 @media screen and (max-width: $sm) {

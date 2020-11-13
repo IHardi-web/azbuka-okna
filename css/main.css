@@ -1176,6 +1176,17 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .card__item--wide .card__content {
+    top: 15%;
+  }
+  .product {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product__item {
+    margin: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 798px) {
@@ -1203,6 +1214,19 @@ body {
   }
   .menu__item {
     margin: 1.5rem;
+  }
+  .card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card__item {
+    margin: 1rem 0;
+  }
+  .card__item--wide .card__content {
+    top: 27%;
   }
 }
 
