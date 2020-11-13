@@ -1,0 +1,28 @@
+$xl: 1240px;
+$lg: 992px;
+$md: 798px;
+$sm: 606px;
+
+@media screen and (max-width: $xl) {
+  .container {
+    max-width: $lg;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .container {
+    max-width: $md;
+  }
+
+}
+
+@media screen and (max-width: $md) {
+  .container {
+    max-width: $sm;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  
+
+}
