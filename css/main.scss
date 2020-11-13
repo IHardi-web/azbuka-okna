@@ -96,8 +96,7 @@ body {
     &--inner {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      height: 10.8rem;
+      min-height: 10.8rem;
     }
 
     &--wrap {
@@ -107,7 +106,9 @@ body {
   }
 
   &__logo {
-    margin-top: -26px;
+    position: relative;
+    top: -13px;
+    margin-right: 3.9rem;
     text-transform: uppercase;
     color: $pink;
     font-size: 3.7rem;
@@ -131,9 +132,8 @@ body {
 
   &__text {
     color: $grey-700;
-    margin-left: 3.9rem;
     align-self: center;
-    width: 23rem;
+    max-width: 23rem;
     line-height: 1.7rem;
   }
 
@@ -169,7 +169,8 @@ body {
 
   &__content {
     width: 750px;
-    height: 178px;
+    max-width: 90%;
+    min-height: 178px;
     padding: 45px 15px 0;
     box-shadow: $shadow;
     background-color: #fbfbfb;
@@ -226,11 +227,10 @@ body {
 
   &__inner {
     max-width: 100%;
-    height: 8.2rem;
+    min-height: 8.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   &__item {
