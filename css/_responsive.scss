@@ -86,6 +86,17 @@ $sm: 606px;
     }
   }
   
+  .partners {
+    flex-direction: column;
+    &--wrap {
+      top: 0;
+      margin-top: 3rem;
+    }
+    
+    .text-block__item {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: $md) {
@@ -231,6 +242,33 @@ $sm: 606px;
     max-width: 80%;
     margin: 0 auto;
   }
+
+  .partners {
+    &--wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__image {
+      margin: 2rem 1rem 0;
+    }
+  }
+
+  .form {
+    &__wrapper {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__input {
+      margin-top: 1rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
 }
 
 

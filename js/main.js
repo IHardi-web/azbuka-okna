@@ -46,14 +46,19 @@ $(document).ready(function () {
     navText: ['<span class="arrow arrow--small arrow--left"></span>', '<span class="arrow arrow--small arrow--right"></span>'],
     responsive: {
       0: {
+        items: 1,
+      },
+      450: {
         items: 2,
       },
-      992: {
+      606: {
+        items: 3,
+      },
+      798: {
         items: 4,
       },
-      1000: {
+      1032: {
         items: 5,
-        nav: true,
       }
     }
   });

@@ -655,7 +655,8 @@ body {
   &--wrap {
     display: flex;
     justify-content: space-between;
-    max-width: 570px;
+    width: 570px;
+    max-width: 100%;
     position: relative;
     top: -2.2rem;
   }
